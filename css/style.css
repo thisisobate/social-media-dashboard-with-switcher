@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   background-color: hsl(230, 17%, 14%);
   min-height: 100vh;
+  font-family: 'Inter', sans-serif;
 }
 
 /* .bg {
@@ -36,20 +37,23 @@ body {
   border-top: 5px solid #1a8ff6;
 }
 
-.top_instagram {
-  /* border-top: 5px solid hsl(329, 70%, 58%); */
-
-  border-top-width: 3px;
-  border-style: solid;
-  border-image: linear-gradient(
-      to bottom,
-      hsl(37, 97%, 70%),
-      hsl(329, 70%, 58%)
-    )
-    50% 10%;
-  /* border-image: linear-gradient(, hsl(329, 70%, 58%)) 5 0 0 0 */
-  /* repeat; */
+.top_gradient {
+  border-top: 5px solid hsl(329, 70%, 58%);
 }
+
+.top_red {
+  border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+/* .top_instagram:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(to left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  top: 200px;
+  left: 0;
+} */
 
 .grid {
   display: grid;
@@ -74,13 +78,61 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
-@media (max-width: 479px) {
+.social-icon {
+  text-align: center;
+  margin-top: -25px;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+}
+
+.txt_middle {
+  align-self: center;
+}
+
+.fa-facebook-square {
+  color: #1a8ff6;
+  font-size: 21px;
+  margin-right: 9px;
+}
+
+.fa-sort-up {
+  color: hsl(163, 72%, 41%);
+  font-size: 15px;
+  padding-top: 4px;
+  padding-right: 4px;
+}
+
+.counter {
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.large_font {
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.spaced_font {
+  letter-spacing: 5px;
+  color: hsl(228, 34%, 66%);
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 550px) {
   /* .grid {
     display: flex;
     flex-direction: column;
   } */
 
   .grid {
-    grid-template-rows: repeat(4, 300px);
+    grid-template-rows: repeat(4, 270px);
   }
 }
