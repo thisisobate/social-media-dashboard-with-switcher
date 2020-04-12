@@ -18,6 +18,14 @@ body {
   justify-content: space-between;
 }
 
+.header_txt {
+  margin-left: 6.5%;
+}
+
+.overview {
+  margin-left: 10%;
+}
+
 .box-a {
   padding: 50px;
   background-color: hsl(228, 28%, 20%);
@@ -56,7 +64,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: 130px 130px;
   grid-gap: 1.9rem;
-  margin: 10%;
+  margin: 40px 10%;
   grid-auto-flow: row;
 }
 
