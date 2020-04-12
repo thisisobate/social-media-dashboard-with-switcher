@@ -1,0 +1,78 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: hsl(230, 17%, 14%);
+  min-height: 100vh;
+}
+
+/* .bg {
+  background-color: hsl(230, 17%, 14%);
+  min-height: 100vh;
+} */
+
+.header {
+  background-color: hsl(232, 19%, 15%);
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-a {
+  padding: 50px;
+  background-color: hsl(228, 28%, 20%);
+  color: hsl(0, 0%, 100%);
+}
+
+.top_blue {
+  border-top: 5px solid #1a8ff6;
+}
+
+.top_instagram {
+  /* border-top: 5px solid hsl(329, 70%, 58%); */
+
+  border-top-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to bottom,
+      hsl(37, 97%, 70%),
+      hsl(329, 70%, 58%)
+    )
+    50% 10%;
+  /* border-image: linear-gradient(, hsl(329, 70%, 58%)) 5 0 0 0 */
+  /* repeat; */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-rows: 200px;
+  grid-gap: 1.9rem;
+  margin: 10%;
+}
+
+.grid_b {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 130px 130px;
+  grid-gap: 1.9rem;
+  margin: 10%;
+  grid-auto-flow: row;
+}
+
+.box-b {
+  padding: 50px;
+  background-color: hsl(228, 28%, 20%);
+  color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 479px) {
+  /* .grid {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  .grid {
+    grid-template-rows: repeat(4, 300px);
+  }
+}
