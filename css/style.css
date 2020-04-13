@@ -12,19 +12,42 @@ body {
   min-height: 100vh;
 } */
 
+h2 {
+  font-weight: 700;
+  color: #fff;
+}
+
 .header {
   background-color: hsl(232, 19%, 15%);
-  padding: 30px 50px;
+  padding: 130px 50px;
+}
+
+.grid_container {
+  margin-top: -140px;
+}
+
+.top_container {
   display: flex;
   justify-content: space-between;
+  margin-top: -94px;
 }
 
 .header_txt {
   margin-left: 6.5%;
 }
 
+.header_txt > p {
+  color: hsl(228, 34%, 66%);
+  font-size: small;
+  font-weight: 600;
+  margin-top: -16px;
+}
+
 .overview {
   margin-left: 10%;
+  font-weight: 700;
+  color: #fff;
+  font-size: 20px;
 }
 
 .box-a {
@@ -60,7 +83,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-template-rows: 200px;
   grid-gap: 1.9rem;
-  margin: 10%;
+  margin: 40px 10%;
 }
 
 .grid_b {
@@ -73,7 +96,7 @@ body {
 }
 
 .box-b {
-  padding: 50px;
+  padding: 55px 30px;
   background-color: hsl(228, 28%, 20%);
   color: hsl(0, 0%, 100%);
 }
@@ -96,6 +119,36 @@ body {
   margin-right: 9px;
 }
 
+.fa-instagram {
+  color: hsl(329, 70%, 58%);
+  font-size: 21px;
+  margin-right: 9px;
+}
+
+.fa-twitter {
+  color: hsl(203, 89%, 53%);
+  font-size: 18px;
+  margin-right: 9px;
+}
+
+.fa-youtube {
+  font-size: 12px;
+  color: #392239;
+}
+
+.bg_red {
+  background-color: hsl(348, 97%, 39%);
+  padding: 3px 4px;
+  margin-right: 9px;
+  border-radius: 50px;
+}
+
+.bg_red2 {
+  background-color: hsl(348, 97%, 39%);
+  padding: 1px 4px;
+  border-radius: 10px;
+}
+
 .fa-sort-up {
   color: hsl(163, 72%, 41%);
   font-size: 15px;
@@ -103,12 +156,28 @@ body {
   padding-right: 4px;
 }
 
+.fa-sort-down {
+  font-size: 15px;
+  padding-right: 4px;
+  margin-top: -3px;
+}
+
+.txt_red {
+  color: hsl(356, 69%, 56%) !important;
+}
+
+/* .rotate {
+  transform: rotate(180deg);
+  padding-top: 0 !important;
+} */
+
 .counter {
   font-size: 12px;
   text-align: center;
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  color: hsl(163, 72%, 41%);
 }
 .large_font {
   font-weight: 700;
@@ -124,6 +193,41 @@ body {
   text-transform: uppercase;
   font-size: 12px;
   text-align: center;
+}
+
+.top_part {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -25px;
+}
+
+.sort {
+  margin-right: 0 !important;
+}
+
+.counterb {
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+  color: hsl(163, 72%, 41%);
+}
+
+.bottom_part {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: flex-end;
+}
+
+.counter_number {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.txt_left {
+  font-size: smaller;
+  font-weight: 500;
+  color: hsl(228, 34%, 66%);
 }
 
 @media (max-width: 550px) {
