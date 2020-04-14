@@ -230,6 +230,88 @@ h2 {
   color: hsl(228, 34%, 66%);
 }
 
+.toggle {
+  display: flex;
+  align-items: center;
+}
+
+.toggle_txt {
+  padding-right: 20px;
+  color: #fff;
+}
+/* -------------------------------- 
+
+Title: Switch
+Descr: Custom ON/OFF checkbox toggle
+
+-------------------------------- */
+
+.switch {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  position: relative;
+  width: 64px;
+  height: 32px;
+  border-radius: 50em;
+  padding: 3px 0;
+}
+
+.switch__input,
+.switch__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.switch__input {
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+}
+
+.switch__input:checked + .switch__label {
+  background-color: hsl(230, 17%, 14%);
+}
+
+.switch__input:checked + .switch__label + .switch__marker {
+  left: calc(100% - 32px) + 3px;
+}
+
+.switch__input:focus + .switch__label,
+.switch__input:active + .switch__label {
+  --color-shadow: hsla(black, yellow, orange, 0.2);
+  box-shadow: 0 0 0 3px var(--color-shadow);
+}
+
+.switch__label {
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  user-select: none;
+  background-color: #f903f9;
+  border-radius: inherit;
+  z-index: 1;
+  transition: background 0.2s;
+}
+
+.switch__marker {
+  position: relative;
+  background-color: white;
+  width: calc(32px - 3px * 2);
+  height: calc(32px - 3px * 2);
+  border-radius: 50%;
+  z-index: 2;
+  pointer-events: none;
+  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25);
+  left: 3px;
+  transition: left 0.2s;
+  will-change: left;
+}
+
 @media (max-width: 550px) {
   /* .grid {
     display: flex;
