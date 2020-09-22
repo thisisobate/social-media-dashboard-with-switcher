@@ -6,4 +6,4 @@
 
 Thanks for checking out this front-end coding project.
 
-[live](https://social-media-dashboard-with-switcher-536yrsltm.now.sh/) 
+Link to [live](https://social-media-dashboard-with-switcher-536yrsltm.now.sh/) 
